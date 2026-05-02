@@ -1,5 +1,29 @@
 ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2A26;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar{
+    background-color: #8FA68E;
+    padding: 15px 30px;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
 }
