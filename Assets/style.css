@@ -103,3 +103,43 @@ img {
     fill: #2E2A26;
 }
 
+.hero {
+    background: #8FA68E;
+    text-align: center;
+    padding: 80px 20px;
+
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    font-family: Playfair Display, serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #F5EFE6;
+    box-shadow: 0 2px rgba(0,0,0,0.1);
+}
+
+.current-book {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.books {
+    display: flex;
+    gap: 20px;
+}
+
+body{
+    margin: 0;
+    background: #F5EFE6;
+} 
