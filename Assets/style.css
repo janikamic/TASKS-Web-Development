@@ -143,3 +143,25 @@ body{
     margin: 0;
     background: #F5EFE6;
 } 
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+width: 120px;
+border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
