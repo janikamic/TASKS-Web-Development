@@ -37,33 +37,53 @@
         <h1>The home of every story you'll love.</h1>
         <button>Discover</button>
     </section>
-
+    
     <section class="Current"></section>
     <h2>I am currently reading...</h2>
     <div class="current book">
-    <img src="book cover.jpg" alt="Book Cover">
+        <img src="book cover.jpg" alt="Book Cover">
     </div>
     <h3>Before the Coffee Gets Cold</h3>
     <p>Toshikazu Kawaguchi</p>
     <button>Resume reading</button>
     
-<section class="trending">
-    <h2>Trending this week</h2>
-    <div class="carousel-container">
-        <button class="prev">‹</button>
-
-        <div class="carousel">
-<img src="photos/1984 book.jpg" alt="Book 1">
-<img src="photos/just for the summer book.jpg" alt="Book 2">
-<img src="photos/never lie book.jpg" alt="Book 3">
-<img src="photos/normal people bok.jpg" alt="Book 4">
-<img src="photos/the alchemist book.jpg" alt="Book 5">
+    <section class="trending">
+        <h2>Trending this week</h2>
+        
+        <div class="carousel-container">
+            <button class="prev">‹</button>
+            
+            <div class="carousel">
+                <img src="photos/1984 book.jpg" alt="Book 1">
+                <img src="photos/just for the summer book.jpg" alt="Book 2">
+                <img src="photos/never lie book.jpg" alt="Book 3">
+                <img src="photos/normal people bok.jpg" alt="Book 4">
+                <img src="photos/the alchemist book.jpg" alt="Book 5">
+                <img src="photos/conversations book.jpg" alt="Book 6">
+                <img src="photos/goldfinch book.jpg" alt="Book 7">
+                <img src="photos/picking daisies book.jpg" alt="Book 8">
+                <img src="photos/book theif book.jpg" alt="Book 9">
+            </div>
+            
+            <button class="next">›</button>
         </div>
-    </div>
-</section>
-
-
-
-
+    </section>
+    
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const next = document.querySelector('.next');
+        const prev = document.querySelector('.prev');
+        
+        next.addEventListener('click', () => {
+            carousel.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+        
+        prev.addEventListener('click', () => {
+            carousel.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+    </script>
+    
+    
+    
 </body>
 </html>
