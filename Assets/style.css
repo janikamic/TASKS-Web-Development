@@ -178,3 +178,57 @@ button {
     cursor: pointer;
     color: #2E2A26;
 }
+
+footer {
+    background-color: #8FA68E;
+    color: #2E2A26;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+#menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #F5EFE6;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+#side-menu.active {
+left: 0;
+}
+
+#side-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+#side-menu li {
+    padding: 15px;
+}
+
+#side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#side-menu a:hover {
+    background-color: #F5EFE6;
+    display: block;
+}
