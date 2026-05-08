@@ -18,11 +18,10 @@
     
     <header class="navbar">
         <div class="nav-left">
-            <a href="homepage.html">
-                <img src="Logo & Icons/chapterly-logo.svg" class="search-icon" alt="search">
-            </a>
-            
             <ul>
+            <a href="homepage.html">
+                <img src="Logo & Icons/chapterly-logo.svg" class="chapterly-icon" alt="chapterly">
+            </a>
                 <li><a href="Bookshelves.html">My Bookshelves</a></li>
                 <li><a href="Contact.html">Contact Us</a></li>
             </ul>
@@ -30,7 +29,7 @@
         
         <div class="nav-right">
             <div class="search">
-                <img src="Logo & Icons/search-icon.svg" alt="Search icon"classsearch-icon>
+                <img src="Logo & Icons/search-icon.svg" alt="Search icon">
                 <input type="text" placeholder="Search Here">
             </div>
         </div>
@@ -41,20 +40,24 @@
         <button>Discover</button>
     </section>
     
-    <section class="Current"></section>
-    <h2>I am currently reading...</h2>
+    <section class="current-book">
+        
+    <h2 class="section-title">I am currently reading...</h2>
     <div class="current-book">
         <img src="book cover.jpg" alt="Book Cover">
-    </div>
-    <h3>Before the Coffee Gets Cold</h3>
-    <p>Toshikazu Kawaguchi</p>
-
+    
+    <div class="book-info">
+        <h2>Before the Coffee Gets Cold</h2>
+        <p>Toshikazu Kawaguchi</p>
+    
     <button class="resume-btn">
         Resume reading
+    </div>
     </button>
-    
+    </section>
+    </div>
     <section class="trending">
-        <h2>Trending this week</h2>
+        <h2 class="section-title">Trending this week</h2>
         
         <div class="carousel-container">
             <button class="prev">‹</button>
