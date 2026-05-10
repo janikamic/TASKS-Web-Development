@@ -32,24 +32,55 @@
     </header>
     
     <section class="contact-section">
-        <h2>Contact Us</h2>
+        
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                
+                <h2>Get in Touch!</h2>
+                
+                <div class="info-text">
+                    <p>Email:</p>
+                    <span>chapterly@example.com</span>
+                    
+                    <p>Phone:</p>
+                    <span>+134567890</span>
+                </div>
+                
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            
+        </div>
+        
+        
         
         <form class="contact-form">
+            <div class="top-inputs">
+                
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Your full name">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Your email address">
+                </div>
+                
+            </div>
 
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Your Name" required>
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="Your Email" required>
-
-            <label for="message">Your Message</label>
-            <textarea id="message" placeholder="Your Message" required></textarea>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea placeholder="Write a message..."></textarea>
+            </div>
             
+
             <button type="submit">Send Message</button>
         </form>
-        
-    </section>
-    
     
 </body>
 </html>
