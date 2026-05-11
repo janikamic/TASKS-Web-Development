@@ -33,61 +33,64 @@
     
     <section class="contact-section">
         
-        <div class="contact-container">
+        <section class="contact-container">
             
             <div class="contact-info">
                 
                 <h2>Get in Touch!</h2>
                 
                 <div class="info-text">
+                    
                     <p>Email:</p>
                     <span>chapterly@example.com</span>
                     
                     <p>Phone:</p>
                     <span>+134567890</span>
+                    
                 </div>
                 
-                <div class="socials">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
             </div>
             
-        </div>
-        
-        
-        
-        <form class="contact-form">
-            <div class="top-inputs">
-                
-                <div class="input-group">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Your full name">
-                </div>
-                
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Your email address">
-                </div>
-                
-            </div>
-
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea placeholder="Write a message..."></textarea>
+            
+            
+            <form action="mailto:janikamicallef7@gmail.com"
+            method="post"
+            enctype="text/plain">
+            
+            
+            <h3>Full Name</h3>
+            <div id="divDetails">
+                <input type="text" id="FullName" name="FullName" placeholder="Your Full Name" required>
             </div>
             
-
-            <button type="submit">Send Message</button>
+            
+            
+            
+            <h3>Email </h3>
+            <div>
+                <input type="text" id="email" name="emailAddress" placeholder="Your Email Address" required>
+            </div>
+            
+            
+            
+            <h3>Message</h3>
+            <div>
+                <textarea name="fullMessage" id="Message" placeholder="Write your message here" cols="70" rows="10" required
+                ></textarea>
+            </div>
+            
+            
+            <div id="divButtons">
+                <button type="submit">Send Message</button>
+                <button type="reset">Cancel</button>
+            </div>
+            
         </form>
+    </section>
 
-
-        <footer>
-        <div class="footer-container">
-            <p>&copy; 2026 Chapterly. All rights reserved.</p>
-        </div>
-    </footer>
     
-</body>
-</html>
+        
+    </body>
+    </html>
+    
+    

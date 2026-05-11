@@ -18,12 +18,12 @@ a {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
-
+    
 }
 
 .navbar{
     background-color: #8FA68E;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +49,22 @@ li{
     padding: 20px;
 }
 
+html,
+body{
+    height: 100%;
+    margin: 0;
+}
 
+body{
+    min-height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+}
 
+main{
+    flex: 1;
+}
 .chapterly-icon {
     height: 40px;
     border-right: 1px solid #2E2A26;
@@ -123,8 +136,6 @@ li{
 .icon {
     font-size: 14px;
 }
-
-
 
 .icon {
     fill: #2E2A26;
@@ -251,33 +262,39 @@ body{
     padding: 10px 10px;
 }
 
-footer {
+footer{
     background-color: #8FA68E;
     color: #F5EFE6;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 25px 0;
 }
 
 .footer-container {
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
     align-items: end;
 }
 
 
 .contact-section{
-    max-width: 700px;
-    margin: 80px auto;
-    padding: 70px 40px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 40px 60px;
     border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
     
 }
 
 .contact-section h2 {
     font-family: 'Playfair Display', serif;
-    text-align: center;
     font-size: 28px;
-    margin-bottom: 20px;
+    align-items: flex-start;
     color: #2E2A26;
 }
 
@@ -289,43 +306,39 @@ footer {
 
 
 .contact-container{
-    max-width: 1100px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 60px;
     align-items: flex-start;
+    gap: 100px;
 }
 
 .contact-info{
-    width: 30%;
+    width: 35%;
+    margin-top:-40px;
 }
 
 .contact-info h2{
-    font-size: 48px;
-    margin-bottom: 40px;
+    font-size: 82px;
+    margin-bottom: 45px;
+    color: #F5EFE6;
+    line-height: 1.05;
 }
 
 .info-text p{
     font-weight: bold;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 35px;
 }
 
 .info-text span{
     color: #2E2A26;
-}
-
-.socials{
-    margin-top: 40px;
-    display: flex;
-    gap: 20px;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .top-inputs{
-display: flex;
-gap: 20px;
-margin-bottom: 25px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
 .input-group label{
@@ -340,29 +353,101 @@ margin-bottom: 25px;
     color: #2E2A26;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
+.contact-container{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.contact-info h2{
+    font-size: 54px;
+    margin-bottom: 30px;
+    color: #2E2A26;
+}
+
+.info-text span{
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.info-text p{
+    font-family: "Inter", sans-serif;
+}
+
+.info-text span{
+    color: #2E2A26;
+    font-size: 18px;
+}
+
+form{
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+form div{
+    width: 100%;
+}
+
+form h3{
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+input ,
+textarea{
+    width: 100%;
+    padding: 20px;
     border: 1px solid #2E2A26;
     border-radius: 8px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    resize: vertical;
     background-color: #F5EFE6;
-    height: 150px;
-    resize: none;
-
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
 }
 
-.contact-form button {
+input:focus,
+textarea:focus{
+    border-color: #8FA68E;
+    box-shadow: 0 0 5px rgba(143,166,142,0.5);
+}
+
+textarea{
+    resize: none;
+    height: 300px;
+}
+
+#divButtons {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+button{
     background: #8FA68E;
     border: none;
-    padding: 12px;
+    padding: 14px 28px;
     border-radius: 12px;
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
+    font-family: "Inter", sans-serif;
     cursor: pointer;
-    color: #F5EFE6;
-    transition: 0.3s ease;
-    box-shadow: 0 2px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
+
+button:hover{
+    background: #7e947d;
+    color: #FBF8F3;
+}
+
