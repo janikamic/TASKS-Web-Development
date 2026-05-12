@@ -518,6 +518,12 @@ body{
     left: 280px;
 }
 
+#menuArrow{
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2A26;
+}
+
 .menu-toggle img{
     width: 22px;
 }   

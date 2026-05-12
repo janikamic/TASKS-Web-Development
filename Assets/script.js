@@ -1,4 +1,3 @@
-
 const menuToggle = document.getElementById("menuToggle");
 
 const sidebar = document.getElementById("sidebar");
@@ -11,15 +10,13 @@ menuToggle.addEventListener("click", () => {
 
     menuToggle.classList.toggle("active");
 
-    // CHANGE ARROW DIRECTION
-
     if(sidebar.classList.contains("active")){
 
-        menuArrow.src = "Logo & Icons/arrow-left.svg";
+        menuArrow.textContent = "<";
 
     } else {
 
-        menuArrow.src = "Logo & Icons/arrow-right.svg";
+        menuArrow.textContent = ">";
     }
 
 });
