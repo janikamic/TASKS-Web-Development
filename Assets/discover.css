@@ -145,7 +145,7 @@ main{
 .discover-page{
     display: flex;
     justify-content: space-between;
-   
+    
     padding: 70px 50px;
     background: #FBF8F3;
 }
@@ -156,7 +156,7 @@ main{
 
 .section-title{
     font-family: playfair display, serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     color: #2E2A26;
     margin-bottom: 20px;
@@ -168,13 +168,13 @@ main{
 
 .books-row{
     display: flex;
-    gap: 10px;
+    gap: 18px;
     margin-bottom: 60px;
     
 }
 
 .books-row img{
-    width: 130px;
+    width: 140px;
     height: auto;
     object-fit: cover;
     border-radius: 18px;
@@ -188,9 +188,11 @@ main{
 }
 
 .friends-section{
-    width: 150px;
+    width: 500px;
     border-left: 2px solid #8FA68E;
-    padding-left: 35px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .friends-section h2{
@@ -198,27 +200,33 @@ main{
     font-size: 28px;
     font-weight: 500;
     color: #2E2A26;
-    margin-bottom: 5px;
-}
+    margin: 5px;
+    }
 
 .friends-section p{
     font-family: "Inter", sans-serif;
     font-size: 18px;
     color: #2E2A26;
-    margin-bottom: 40px;
+    padding-top: 0px;
+    margin-top: 5px;
+    padding-bottom: 15px;
 }
 
 .friend-card{
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
+    width: 100%;
     background: #F5EFE6;
     border: 3px solid #8FA68E;
-    border-radius: 22px;
-    padding: 14px 18px;
-    margin-bottom: 28px;
+    border-radius: 24px;
+    padding: 18px 22px;
+    margin-bottom: 30px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
     transition: 0.3s;
+}
+.friend-card div{
+    flex: 1;
 }
 
 .friend-card:hover{
@@ -234,17 +242,18 @@ main{
 }
 
 .friend-card h3{
-font-family: "Inter", sans-serif;
-font-size: 18px;
-font-weight: 500;
-color: #2E2A26;
-margin-bottom: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2E2A26;
+    margin-bottom: 5px;
 }
 
 .friend-card span{
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #2E2A26;
+    line-height: 1.4;
 }
 
 
@@ -258,11 +267,144 @@ footer{
     padding: 25px 0;
     font-family: "Inter", sans-serif;
     font-size: smaller;
-
+    
 }
 
 .footer-container {
     width: 60%;
     margin: 0 auto;
     align-items: end;
+}
+
+/* SLIDE OUT MENU */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F5EFE6;
+    font-family: "Playfair Display", serif;
+    overflow-x: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    
+    top: 0;
+    left: -280px;
+    
+    width: 280px;
+    height: 100vh;
+    
+    background: #F5EFE6;
+    padding: 30px 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    box-shadow: 4px 0 15px rgba(0,0,0,0.15);
+    
+    display: flex;
+    
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.menu-toggle{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 72px;
+    background: #FBF8F3;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 1100;
+    transition: 0.4s ease;
+}
+
+.menu-toggle.active{
+    left: 280px;
+}
+
+#menuArrow{
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2A26;
+}
+
+.profile-section{
+    text-align: center;
+}
+
+.profile-section h1{
+    font-size: 38px;
+    color: #2E2A26;
+    margin-bottom: 22px;
+    font-family: "Playfair Display", serif;
+}
+
+.profile-pic{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-section p{
+    font-size: 26px;
+    color: #2E2A26;
+    font-family: "Inter", sans-serif;
+}
+
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sidebar-links a{
+    text-decoration: none;
+    color: #2E2A26;
+    font-size: 24px;
+    transition: 0.3s;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.sidebar-links a:hover{
+    transform: translateX(5px);
+    opacity: 0.7;
+    color: #364535;
+}
+
+.sidebar-socials{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding-bottom: 10px;
+}
+
+.sidebar-socials img{
+    width: 34px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar-socials img:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
 }
