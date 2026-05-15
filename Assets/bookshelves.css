@@ -291,181 +291,46 @@ body{
     opacity: 0.7;
 }
 
-.profile-page{
-    padding: 50px;
+.bookshelves-page{
+    padding: 40px 60px 120px 60px;
     background: #FBF8F3;
-}
-
-.profile-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-}
-
-.profile-card{
-    background: #F5EFE6;
-    border: 2px solid #8FA68E;
-    padding: 28px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
-    border-radius: 25px;
-}
-
-.progress-card{
-    background: #F5EFE6;
-    border: 2px solid #8FA68E;
-    padding: 28px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
-    border-radius: 25px;
-}
-.genres-card{
-    background: #F5EFE6;
-    border: 2px solid #8FA68E;
-    padding: 28px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
-    border-radius: 25px;
-}
-
-.friends-card{
-    background: #F5EFE6;
-    border: 2px solid #8FA68E;
-    padding: 28px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
-    border-radius: 25px;
-}
-
-.profile-card{
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.profile-card img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-card h1{
-    font-family: "Playfair Display", serif;
-    font-size: 38px;
-    color: #2E2A26;
-    margin-bottom: 5px;
-}
-
-.profile-card p{
-    font-family:"Inter", sans-serif;
-    font-size:28px;
-    color:#4b4743;
-}
-
-.progress-card{
-    text-align:center;
-}
-
-.progress-card h2{
-    font-family:"Playfair Display", serif;
-    font-size: 28px;
-    margin-bottom:25px;
-    color:#2E2A26;
-}
-
-.progress-circle{
-    width:220px;
-    height:220px;
-    margin:auto;
-    border-radius:50%;
-    background:conic-gradient(
-    #55664f 0% 18%,
-    #9daf97 18% 100%
-    );
     
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.12);
 }
 
-.progress-inner{
-    width:120px;
-    height:120px;
-    background:#f7f4ee;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:px;
-    font-family:"Inter", sans-serif;
-    color:#2E2A26;
+.bookshelf-box{
+    border: 3px solid #8FA68E;
+    border-radius: 22px;
+    padding: 22px 28px;
+    margin-bottom: 35px;
+    background: #F5EFE6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
 }
 
-.genres-card h2{
-    font-family:"Playfair Display", serif;
-    font-size: 28px;
-    color:#2E2A26;
-    margin-bottom:25px;
+.bookshelf-box h2{
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #2E2A26;
+    margin-bottom: 18px;
 }
 
-.friends-card h2{
-    font-family:"Playfair Display", serif;
-    font-size: 28px;
-    color:#2E2A26;
-    margin-bottom:25px;
+.books-row{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.genres-row{
-    display:flex;
-    gap:22px;
+.books-row img{
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #8FA68E;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
 }
 
-.genre-box{
-    position:relative;
+.books-row img:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
 }
-
-.genre-box img{
-    width:140px;
-    height:210px;
-    object-fit:cover;
-    border-radius:16px;
-}
-
-.genre-box:hover img{
-    transform:scale(1.05);
-    transition:0.3s;
-    opacity:0.8;
-}
-
-.genre-box span{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%, -50%);
-    background:#f7f4ee;
-    padding:10px 18px;
-    border-radius:30px;
-    font-family:"Playfair Display", serif;
-    font-size: 16px;
-    border:2px solid #8ea488;
-}
-
-.friend{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    margin-bottom:22px;
-}
-
-.friend img{
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    object-fit:cover;
-    border: #8ea488 2px solid;
-}
-
-.friend p{
-    font-family:"Inter", sans-serif;
-    font-size:22px;
-    color:#2E2A26;
-}
-
