@@ -81,124 +81,6 @@
     color:#666;
 }
 
-
-
-
-.discover-page{
-    display: flex;
-    justify-content: space-between;
-    
-    padding: 70px 50px;
-    background: #FBF8F3;
-}
-
-.discover-left{
-    flex: 1;
-}
-
-.section-title{
-    font-family: playfair display, serif;
-    font-size: 28px;
-    font-weight: 400;
-    color: #2E2A26;
-    margin-bottom: 20px;
-}
-
-.section-title em{
-    font-style: italic;
-}
-
-.books-row{
-    display: flex;
-    gap: 18px;
-    margin-bottom: 60px;
-    
-}
-
-.books-row img{
-    width: 140px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 18px;
-    border: 3px solid #8FA68E;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.books-row img:hover{
-    transform:translateY(-5px);
-}
-
-.friends-section{
-    width: 500px;
-    border-left: 2px solid #8FA68E;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.friends-section h2{
-    font-family: "playfair display", serif;
-    font-size: 28px;
-    font-weight: 500;
-    color: #2E2A26;
-    margin: 5px;
-    }
-
-.friends-section p{
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    color: #2E2A26;
-    padding-top: 0px;
-    margin-top: 5px;
-    padding-bottom: 15px;
-}
-
-.friend-card{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    background: #F5EFE6;
-    border: 3px solid #8FA68E;
-    border-radius: 24px;
-    padding: 18px 22px;
-    margin-bottom: 30px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-}
-.friend-card div{
-    flex: 1;
-}
-
-.friend-card:hover{
-    transform:translateY(-3px);
-}
-
-.friend-card img{
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #8FA68E
-}
-
-.friend-card h3{
-    font-family: "Inter", sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #2E2A26;
-    margin-bottom: 5px;
-}
-
-.friend-card span{
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    color: #2E2A26;
-    line-height: 1.4;
-}
-
-
 footer{
     background-color: #8FA68E;
     color: #F5EFE6;
@@ -351,6 +233,87 @@ body{
     opacity: 0.7;
 }
 
+.notifications-page{
+    padding: 60px;
+    background: #FBF8F3;
+    min-height: 100vh;
+}
+
+.notifications-box{
+    background: #F5EFE6;
+    border: 2px solid #8FA68E;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.notifications-header{
+    background: #8FA68E;
+    padding: 22px;
+    text-align: center;
+}
+
+.notifications-header h1{
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    font-weight: 500;
+    color: #2E2A26;
+}
+
+.notification-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 50px 30px;
+}
+
+.notification-left{
+    display: flex;
+align-items: flex-start;
+gap: 18px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background: #F5EFE6;
+    border-radius: 50%;
+    margin-top: 14px;
+}
+
+.notification-left h2{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #2E2A26;
+}
+
+.notification-right{
+font-family: "Inter", sans-serif;
+font-size: 24px;
+color: #2E2A26;
+}
+
+.notification-right em{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.notification-line{
+    width: 90%;
+    height: 1px;
+    background: #2E2A26;
+    margin: 0 auto;
+}
+
+.end-text{
+    text-align: center;
+    padding: 35px 0 45px;
+    font-family: "Inter", sans-serif;
+    color: #2E2A26;
+    font-size: 18px;
+}
+
 
 /* mobile responsive */
 @media (max-width: 1000px) {
@@ -380,24 +343,17 @@ body{
         max-width: none;
     }
 
-    .discover-page {
-        flex-direction: column;
-        gap: 40px;
-        padding: 48px 28px;
+    .notifications-page {
+        padding: 42px 24px;
     }
 
-    .friends-section {
-        width: 100%;
-        border-left: none;
-        border-top: 2px solid #8FA68E;
-        padding-left: 0;
-        padding-top: 32px;
+    .notifications-header h1 {
+        font-size: 42px;
     }
 
-    .books-row {
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-bottom: 42px;
+    .notification-item {
+        padding: 34px 30px 24px;
+        gap: 24px;
     }
 
     .footer-container {
@@ -405,7 +361,7 @@ body{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .navbar {
         padding: 12px 16px;
         align-items: flex-start;
@@ -438,57 +394,60 @@ body{
         border-radius: 10px;
     }
 
-    .discover-page {
-        padding: 32px 16px;
-        gap: 32px;
+    .notifications-page {
+        padding: 28px 16px;
     }
 
-    .section-title {
-        font-size: 24px;
-        margin-bottom: 18px;
-    }
-
-    .books-row {
-        justify-content: center;
-        gap: 14px;
-        margin-bottom: 36px;
-    }
-
-    .books-row img {
-        width: 105px;
+    .notifications-box {
         border-radius: 14px;
     }
 
-    .friends-section {
-        padding-top: 26px;
+    .notifications-header {
+        padding: 18px 14px;
     }
 
-    .friends-section h2 {
-        font-size: 24px;
+    .notifications-header h1 {
+        font-size: 32px;
+        line-height: 1.15;
     }
 
-    .friends-section p {
-        font-size: 16px;
-    }
-
-    .friend-card {
+    .notification-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 26px 18px 22px;
         gap: 14px;
-        padding: 16px;
-        border-radius: 18px;
-        margin-bottom: 20px;
     }
 
-    .friend-card img {
-        width: 72px;
-        height: 72px;
+    .notification-left {
+        gap: 12px;
     }
 
-    .friend-card h3 {
+    .notification-left h2 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+        margin-top: 8px;
+        flex-shrink: 0;
+    }
+
+    .notification-right {
+        width: 100%;
+        padding-left: 21px;
         font-size: 18px;
+        line-height: 1.4;
     }
 
-    .friend-card span {
-        font-size: 14px;
+    .notification-line {
+        width: 88%;
+    }
+
+    .end-text {
+        padding: 28px 16px 34px;
+        font-size: 16px;
     }
 
     .sidebar {
@@ -541,17 +500,15 @@ body{
         align-items: flex-start;
     }
 
-    .books-row img {
-        width: 92px;
+    .notifications-header h1 {
+        font-size: 28px;
     }
 
-    .friend-card {
-        flex-direction: column;
-        text-align: center;
+    .notification-left h2 {
+        font-size: 16px;
     }
 
-    .friend-card img {
-        width: 80px;
-        height: 80px;
+    .notification-right {
+        font-size: 16px;
     }
 }
