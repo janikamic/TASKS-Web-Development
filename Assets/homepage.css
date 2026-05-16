@@ -132,6 +132,7 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 2px solid #9daf97;
 }
 
 
@@ -188,12 +189,13 @@ body{
 }
 
 .carousel img {
-    width: 110px;
+    width: 150px;
     height: 160px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 2px solid #9daf97;
 }
 
 .current-book h2{
@@ -242,182 +244,8 @@ footer{
 }
 
 
-.contact-section{
-    max-width: 1400px;
-    margin: 30px auto;
-    padding: 40px 60px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 100px;
-    
-}
-
-.contact-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    align-items: flex-start;
-    color: #2E2A26;
-}
-
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 
-.contact-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 100px;
-}
-
-.contact-info{
-    width: 35%;
-    margin-top:-40px;
-}
-
-.contact-info h2{
-    font-size: 82px;
-    margin-bottom: 45px;
-    color: #F5EFE6;
-    line-height: 1.05;
-}
-
-.info-text p{
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 35px;
-}
-
-.info-text span{
-    color: #2E2A26;
-    font-size: 26px;
-}
-
-.top-inputs{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 25px;
-}
-
-.input-group label{
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.contact-form label {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #2E2A26;
-}
-
-.contact-container{
-    margin-bottom: 40px;
-    width: 100%;
-}
-
-.contact-info h2{
-    font-size: 54px;
-    margin-bottom: 30px;
-    color: #2E2A26;
-    font-weight: 500;
-}
-
-.info-text span{
-    font-family: "Inter", sans-serif;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.info-text p{
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
-}
-
-.info-text span{
-    color: #2E2A26;
-    font-size: 18px;
-}
-
-form{
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 1200px;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-}
-
-form div{
-    width: 100%;
-}
-
-form h3{
-    margin-top: 30px;
-    margin-bottom: 12px;
-    font-size: 22px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-}
-
-input ,
-textarea{
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #2E2A26;
-    border-radius: 8px;
-    background-color: #F5EFE6;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-    outline: none;
-    transition: 0.3s;
-    display: block;
-    margin: 0 auto;
-}
-
-input:focus,
-textarea:focus{
-    border-color: #8FA68E;
-    box-shadow: 0 0 5px rgba(143,166,142,0.5);
-}
-
-textarea{
-    resize: none;
-    height: 300px;
-}
-
-#divButtons {
-    display: flex;
-    gap: 20px;
-    margin-top: 35px;
-}
-
-button{
-    background: #8FA68E;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover{
-    background: #7e947d;
-    color: #FBF8F3;
-}
-
-/* SLIDE OUT MENU */
 
 *{
     margin: 0;
